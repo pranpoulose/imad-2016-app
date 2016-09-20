@@ -11,7 +11,9 @@ app.get('/', function (req, res) {
 app.get('/ppp1', function (req, res) {
   res.send('pathkjkj');
 });
-
+app.get('/ppp2.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'ppp2.html'));
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
